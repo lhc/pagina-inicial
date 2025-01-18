@@ -4,173 +4,175 @@
 
 function get_url_to_redir() {
   const urlParams = new URLSearchParams(window.location.search);
-  const title = urlParams.get('title');
-  if (title === 'About the Wiki Antigo category') return 'https://discourse.lhc.net.br/t/959';
-  if (title === 'Toscamp-1') return 'https://discourse.lhc.net.br/t/1171';
-  if (title === 'The Weather') return 'https://discourse.lhc.net.br/t/1170';
-  if (title === 'SpaceFED') return 'https://discourse.lhc.net.br/t/1169';
-  if (title === 'Servidores') return 'https://discourse.lhc.net.br/t/1168';
-  if (title === 'Sdr') return 'https://discourse.lhc.net.br/t/1167';
-  if (title === 'Retr0night') return 'https://discourse.lhc.net.br/t/1166';
-  if (title === 'RepRap') return 'https://discourse.lhc.net.br/t/1165';
-  if (title === 'Quem Somos') return 'https://discourse.lhc.net.br/t/1164';
-  if (title === 'PythonStorm') return 'https://discourse.lhc.net.br/t/1163';
-  if (title === 'Parede PCB') return 'https://discourse.lhc.net.br/t/1162';
-  if (title === 'Ops Night') return 'https://discourse.lhc.net.br/t/1161';
-  if (title === 'NodeLHC') return 'https://discourse.lhc.net.br/t/1160';
-  if (title === 'Mudança') return 'https://discourse.lhc.net.br/t/1159';
-  if (title === 'Muda') return 'https://discourse.lhc.net.br/t/1158';
-  if (title === 'Membros') return 'https://discourse.lhc.net.br/t/1157';
-  if (title === 'Mapa') return 'https://discourse.lhc.net.br/t/1156';
-  if (title === 'Lojinha') return 'https://discourse.lhc.net.br/t/1155';
-  if (title === 'LHCerveja') return 'https://discourse.lhc.net.br/t/1154';
-  if (title === 'LHC Visita') return 'https://discourse.lhc.net.br/t/1153';
-  if (title === 'LHC Cerveja') return 'https://discourse.lhc.net.br/t/1152';
-  if (title === 'LHC Balloon') return 'https://discourse.lhc.net.br/t/1151';
-  if (title === 'LHCFlix') return 'https://discourse.lhc.net.br/t/1150';
-  if (title === 'Jogatina') return 'https://discourse.lhc.net.br/t/1149';
-  if (title === 'Infraestrutura') return 'https://discourse.lhc.net.br/t/1148';
-  if (title === 'Imprensa') return 'https://discourse.lhc.net.br/t/1147';
-  if (title === 'IRC Logs') return 'https://discourse.lhc.net.br/t/1146';
-  if (title === 'Hacker') return 'https://discourse.lhc.net.br/t/1145';
-  if (title === 'Faq') return 'https://discourse.lhc.net.br/t/1144';
-  if (title === 'Doe') return 'https://discourse.lhc.net.br/t/1143';
-  if (title === 'Doações') return 'https://discourse.lhc.net.br/t/1142';
-  if (title === 'Coding Dojo') return 'https://discourse.lhc.net.br/t/1141';
-  if (title === 'Associe-se') return 'https://discourse.lhc.net.br/t/1140';
-  if (title === 'Arcade') return 'https://discourse.lhc.net.br/t/1139';
-  if (title === 'Apc220') return 'https://discourse.lhc.net.br/t/1138';
-  if (title === '2016/04/16 cccp') return 'https://discourse.lhc.net.br/t/1137';
-  if (title === '2016/03/05 cccp') return 'https://discourse.lhc.net.br/t/1136';
-  if (title === 'Vortex of Doom') return 'https://discourse.lhc.net.br/t/1135';
-  if (title === 'Visita do Richard Stallman no LHC') return 'https://discourse.lhc.net.br/t/1134';
-  if (title === 'Vaso auto-irrigável') return 'https://discourse.lhc.net.br/t/1133';
-  if (title === 'Toscamp(0)') return 'https://discourse.lhc.net.br/t/1132';
-  if (title === 'Tintin rocket moon') return 'https://discourse.lhc.net.br/t/1131';
-  if (title === 'The Day We Fight Back') return 'https://discourse.lhc.net.br/t/1130';
-  if (title === 'Template Apresentação') return 'https://discourse.lhc.net.br/t/1129';
-  if (title === 'Sugestão de Nomes') return 'https://discourse.lhc.net.br/t/1128';
-  if (title === 'Sobre meritocracia') return 'https://discourse.lhc.net.br/t/1127';
-  if (title === 'Sensor de Presença') return 'https://discourse.lhc.net.br/t/1126';
-  if (title === 'Seja Associado Fundador') return 'https://discourse.lhc.net.br/t/1125';
-  if (title === 'Reunião de 2017-07-04') return 'https://discourse.lhc.net.br/t/1124';
-  if (title === 'Reunião de 2017-06-06') return 'https://discourse.lhc.net.br/t/1123';
-  if (title === 'Reunião de 2017-05-02') return 'https://discourse.lhc.net.br/t/1122';
-  if (title === 'Reunião de 2017-04-06') return 'https://discourse.lhc.net.br/t/1121';
-  if (title === 'Reunião de 2014-02-04') return 'https://discourse.lhc.net.br/t/1120';
-  if (title === 'Reunião Mensal') return 'https://discourse.lhc.net.br/t/1119';
-  if (title === 'Reunião 2013-01-22') return 'https://discourse.lhc.net.br/t/1118';
-  if (title === 'Reunião 2011-04-30') return 'https://discourse.lhc.net.br/t/1117';
-  if (title === 'Respirador Hacker') return 'https://discourse.lhc.net.br/t/1116';
-  if (title === 'Reembolso de Despesas') return 'https://discourse.lhc.net.br/t/1115';
-  if (title === 'RailsStorm') return 'https://discourse.lhc.net.br/t/1114';
-  if (title === 'Qualcomm Snapdragon') return 'https://discourse.lhc.net.br/t/1113';
-  if (title === 'Quadricoptero') return 'https://discourse.lhc.net.br/t/1112';
-  if (title === 'Página principal') return 'https://discourse.lhc.net.br/t/1111';
-  if (title === 'Próximos Eventos') return 'https://discourse.lhc.net.br/t/1110';
-  if (title === 'Proximidades') return 'https://discourse.lhc.net.br/t/1109';
-  if (title === 'Perguntas Frequentes') return 'https://discourse.lhc.net.br/t/1108';
-  if (title === 'Painel de LED') return 'https://discourse.lhc.net.br/t/1107';
-  if (title === 'Organizando um evento no LHC') return 'https://discourse.lhc.net.br/t/1106';
-  if (title === 'Open Hackerspace') return 'https://discourse.lhc.net.br/t/1105';
-  if (title === 'Oficina de Ruby on Rails com Sintesoft') return 'https://discourse.lhc.net.br/t/1104';
-  if (title === 'Oficina de Lockpicking') return 'https://discourse.lhc.net.br/t/1103';
-  if (title === 'Oficina de IoT') return 'https://discourse.lhc.net.br/t/1102';
-  if (title === 'Oficina de FreeCAD') return 'https://discourse.lhc.net.br/t/1101';
-  if (title === 'Oficina de Computacao Cognitiva/Visual Recognition IBM Watson') return 'https://discourse.lhc.net.br/t/1100';
-  if (title === 'O Mundo das Startups') return 'https://discourse.lhc.net.br/t/1099';
-  if (title === 'Minuta de Carta de Apresentação') return 'https://discourse.lhc.net.br/t/1098';
-  if (title === 'Meetup Web Dev Campinas') return 'https://discourse.lhc.net.br/t/1097';
-  if (title === 'Links Úteis') return 'https://discourse.lhc.net.br/t/1096';
-  if (title === 'LHC Convida 2018') return 'https://discourse.lhc.net.br/t/1095';
-  if (title === 'LHC Convida') return 'https://discourse.lhc.net.br/t/1094';
-  if (title === 'Itens que gostaríamos de ter no futuro') return 'https://discourse.lhc.net.br/t/1093';
-  if (title === 'Introdução ao Arduino') return 'https://discourse.lhc.net.br/t/1092';
-  if (title === 'Introdução a Qt') return 'https://discourse.lhc.net.br/t/1091';
-  if (title === 'Inside Kicad') return 'https://discourse.lhc.net.br/t/1090';
-  if (title === 'Injeção eletrônica de baixo custo') return 'https://discourse.lhc.net.br/t/1089';
-  if (title === 'Inauguração da nova sede') return 'https://discourse.lhc.net.br/t/1088';
-  if (title === 'Impressão 3D') return 'https://discourse.lhc.net.br/t/1087';
-  if (title === 'Horta Automatizada') return 'https://discourse.lhc.net.br/t/1086';
-  if (title === 'Hidroponia com Arduino') return 'https://discourse.lhc.net.br/t/1085';
-  if (title === 'Hands On com Intel Edison usando Bot do Telegram') return 'https://discourse.lhc.net.br/t/1084';
-  if (title === 'Hands On IoT com Intel Edison') return 'https://discourse.lhc.net.br/t/1083';
-  if (title === 'Hacking night') return 'https://discourse.lhc.net.br/t/1082';
-  if (title === 'HackingNightFirst') return 'https://discourse.lhc.net.br/t/1081';
-  if (title === 'HackingNightBluetooth') return 'https://discourse.lhc.net.br/t/1080';
-  if (title === 'HackingNight20120321') return 'https://discourse.lhc.net.br/t/1079';
-  if (title === 'Hackerspace Automation System') return 'https://discourse.lhc.net.br/t/1078';
-  if (title === 'Hackatona Hackerspace') return 'https://discourse.lhc.net.br/t/1077';
-  if (title === 'Hack the Gibson') return 'https://discourse.lhc.net.br/t/1076';
-  if (title === 'Google Cardboard 2') return 'https://discourse.lhc.net.br/t/1075';
-  if (title === 'Gerador de Função') return 'https://discourse.lhc.net.br/t/1074';
-  if (title === 'Genuino Day 2016') return 'https://discourse.lhc.net.br/t/1073';
-  if (title === 'Google cardboard') return 'https://discourse.lhc.net.br/t/1072';
-  if (title === 'Formalização do Hackerspace') return 'https://discourse.lhc.net.br/t/1071';
-  if (title === 'Fonte de Alimentação') return 'https://discourse.lhc.net.br/t/1070';
-  if (title === 'Festa de Inauguração do LHC') return 'https://discourse.lhc.net.br/t/1069';
-  if (title === 'Eventos Regulares') return 'https://discourse.lhc.net.br/t/1068';
-  if (title === 'Eventos Passados') return 'https://discourse.lhc.net.br/t/1067';
-  if (title === 'Evento:2022/09/01 hack night') return 'https://discourse.lhc.net.br/t/1066';
-  if (title === 'Evento:2022/08/27 International hackerspace Open day 2022') return 'https://discourse.lhc.net.br/t/1065';
-  if (title === 'Evento:2022/07/27 reunião mensal') return 'https://discourse.lhc.net.br/t/1064';
-  if (title === 'Evento:2022/06/13 reunião mensal') return 'https://discourse.lhc.net.br/t/1063';
-  if (title === 'Evento:2022/06/02 reunião mensal') return 'https://discourse.lhc.net.br/t/1062';
-  if (title === 'Evento:2022/04/09 reunião mensal') return 'https://discourse.lhc.net.br/t/1061';
-  if (title === 'Evento:2022/03/14 reunião mensal') return 'https://discourse.lhc.net.br/t/1060';
-  if (title === 'Evento:2022/02/14 reunião mensal') return 'https://discourse.lhc.net.br/t/1059';
-  if (title === 'Evento:2022/01/10 reunião mensal') return 'https://discourse.lhc.net.br/t/1058';
-  if (title === 'Evento:2021/12/13 reunião mensal') return 'https://discourse.lhc.net.br/t/1057';
-  if (title === 'Evento:2021/11/08 reunião mensal') return 'https://discourse.lhc.net.br/t/1056';
-  if (title === 'Evento:2021/10/11 reunião mensal') return 'https://discourse.lhc.net.br/t/1055';
-  if (title === 'Evento:2021/09/13 reunião mensal') return 'https://discourse.lhc.net.br/t/1054';
-  if (title === 'Evento:2021/08/09 reunião mensal') return 'https://discourse.lhc.net.br/t/1053';
-  if (title === 'Evento:2021/07/12 reunião mensal') return 'https://discourse.lhc.net.br/t/1052';
-  if (title === 'Evento:2021/06/14 reunião mensal') return 'https://discourse.lhc.net.br/t/1051';
-  if (title === 'Evento:2021/05/10 reunião mensal') return 'https://discourse.lhc.net.br/t/1050';
-  if (title === 'Evento:2021/04/12 reunião mensal') return 'https://discourse.lhc.net.br/t/1049';
-  if (title === 'Evento:2021/03/08 reunião mensal') return 'https://discourse.lhc.net.br/t/1048';
-  if (title === 'Evento:2021/02/08 reunião mensal') return 'https://discourse.lhc.net.br/t/1047';
-  if (title === 'Evento:2021/01/11 reunião mensal') return 'https://discourse.lhc.net.br/t/1046';
-  if (title === 'Evento:2020/12/14 reunião mensal') return 'https://discourse.lhc.net.br/t/1045';
-  if (title === 'Evento:2020/11/09 reunião mensal') return 'https://discourse.lhc.net.br/t/1044';
-  if (title === 'Evento:2020/10/12 reunião mensal') return 'https://discourse.lhc.net.br/t/1043';
-  if (title === 'Evento:2020/09/14 reunião mensal') return 'https://discourse.lhc.net.br/t/1042';
-  if (title === 'Evento:2020/08/10 reunião mensal') return 'https://discourse.lhc.net.br/t/1041';
-  if (title === 'Evento:2020/08/06 openwrt0x00') return 'https://discourse.lhc.net.br/t/1040';
-  if (title === 'Evento:2020/08/06 LHCConvida08') return 'https://discourse.lhc.net.br/t/1039';
-  if (title === 'Evento:2020/08/06 LHCConvida06') return 'https://discourse.lhc.net.br/t/1038';
-  if (title === 'Evento:2020/07/23 LHCConvida05') return 'https://discourse.lhc.net.br/t/1037';
-  if (title === 'Evento:2020/07/13 reunião mensal') return 'https://discourse.lhc.net.br/t/1036';
-  if (title === 'Evento:2020/07/09 LHCConvida04') return 'https://discourse.lhc.net.br/t/1035';
-  if (title === 'Evento:2020/06/25 LHCConvida03') return 'https://discourse.lhc.net.br/t/1034';
-  if (title === 'Evento:2020/06/08 reunião mensal') return 'https://discourse.lhc.net.br/t/1033';
-  if (title === 'Evento:2020/05/26 LHCConvida01') return 'https://discourse.lhc.net.br/t/1032';
-  if (title === 'Evento:2020/05/11 reunião mensal') return 'https://discourse.lhc.net.br/t/1031';
-  if (title === 'Evento:2020/04/16 Live Usando Python para encontrar uma nova casa para o LHC') return 'https://discourse.lhc.net.br/t/1030';
-  if (title === 'Evento:2020/04/06 reunião mensal') return 'https://discourse.lhc.net.br/t/1029';
-  if (title === 'Enderecamento IP') return 'https://discourse.lhc.net.br/t/1028';
-  if (title === 'Encontro de Python') return 'https://discourse.lhc.net.br/t/1027';
-  if (title === 'Encontro PyLadies Campinas 29/07/2017') return 'https://discourse.lhc.net.br/t/1026';
-  if (title === 'Crowdfunding Equipamentos LHC 2017') return 'https://discourse.lhc.net.br/t/1025';
-  if (title === 'Controle de Associados') return 'https://discourse.lhc.net.br/t/1024';
-  if (title === 'Contador de Ciclistas') return 'https://discourse.lhc.net.br/t/1023';
-  if (title === 'Confraternizacao LHC') return 'https://discourse.lhc.net.br/t/1022';
-  if (title === 'Compra Fundamental') return 'https://discourse.lhc.net.br/t/1021';
-  if (title === 'Como chegar') return 'https://discourse.lhc.net.br/t/1020';
-  if (title === 'Cinco Minutos de Fama') return 'https://discourse.lhc.net.br/t/1019';
-  if (title === 'CCCP - Campinas Classic Computer Party') return 'https://discourse.lhc.net.br/t/1018';
-  if (title === 'CCCP:Máquinas Expostas') return 'https://discourse.lhc.net.br/t/1017';
-  if (title === 'Automação com ESP8266') return 'https://discourse.lhc.net.br/t/1016';
-  if (title === 'Arduino Day 2016') return 'https://discourse.lhc.net.br/t/1015';
-  if (title === 'Aniversário de 2 anos do LHC') return 'https://discourse.lhc.net.br/t/1014';
-  if (title === '2018/07/10 Noite de Processing') return 'https://discourse.lhc.net.br/t/1013';
-  if (title === '2018/06/24 LHCerveja Brassagem') return 'https://discourse.lhc.net.br/t/1012';
-  if (title === '2017/11/25 A-Frame — WebVR com HTML e Entity-Component') return 'https://discourse.lhc.net.br/t/1011';
-  if (title === '2017/10/28 Mergulhando em Rust by Mozilla') return 'https://discourse.lhc.net.br/t/1010';
-  if (title === '2017/10/24 LHC Convida Ranulfo Paiva Sobrinho - Criptomoedas Blockchain e suas implicações') return 'https://discourse.lhc.net.br/t/1009';
-  if (title === '2017/10/19 Aniversario do LHC') return 'https://discourse.lhc.net.br/t/1008';
-  return '/index.html';
+  const redirTable = {
+    'About the Wiki Antigo category': 959,
+    'Toscamp-1': 1171,
+    'The Weather': 1170,
+    'SpaceFED': 1169,
+    'Servidores': 1168,
+    'Sdr': 1167,
+    'Retr0night': 1166,
+    'RepRap': 1165,
+    'Quem Somos': 1164,
+    'PythonStorm': 1163,
+    'Parede PCB': 1162,
+    'Ops Night': 1161,
+    'NodeLHC': 1160,
+    'Mudança': 1159,
+    'Muda': 1158,
+    'Membros': 1157,
+    'Mapa': 1156,
+    'Lojinha': 1155,
+    'LHCerveja': 1154,
+    'LHC Visita': 1153,
+    'LHC Cerveja': 1152,
+    'LHC Balloon': 1151,
+    'LHCFlix': 1150,
+    'Jogatina': 1149,
+    'Infraestrutura': 1148,
+    'Imprensa': 1147,
+    'IRC Logs': 1146,
+    'Hacker': 1145,
+    'Faq': 1144,
+    'Doe': 1143,
+    'Doações': 1142,
+    'Coding Dojo': 1141,
+    'Associe-se': 1140,
+    'Arcade': 1139,
+    'Apc220': 1138,
+    '2016/04/16 cccp': 1137,
+    '2016/03/05 cccp': 1136,
+    'Vortex of Doom': 1135,
+    'Visita do Richard Stallman no LHC': 1134,
+    'Vaso auto-irrigável': 1133,
+    'Toscamp(0)': 1132,
+    'Tintin rocket moon': 1131,
+    'The Day We Fight Back': 1130,
+    'Template Apresentação': 1129,
+    'Sugestão de Nomes': 1128,
+    'Sobre meritocracia': 1127,
+    'Sensor de Presença': 1126,
+    'Seja Associado Fundador': 1125,
+    'Reunião de 2017-07-04': 1124,
+    'Reunião de 2017-06-06': 1123,
+    'Reunião de 2017-05-02': 1122,
+    'Reunião de 2017-04-06': 1121,
+    'Reunião de 2014-02-04': 1120,
+    'Reunião Mensal': 1119,
+    'Reunião 2013-01-22': 1118,
+    'Reunião 2011-04-30': 1117,
+    'Respirador Hacker': 1116,
+    'Reembolso de Despesas': 1115,
+    'RailsStorm': 1114,
+    'Qualcomm Snapdragon': 1113,
+    'Quadricoptero': 1112,
+    'Página principal': 1111,
+    'Próximos Eventos': 1110,
+    'Proximidades': 1109,
+    'Perguntas Frequentes': 1108,
+    'Painel de LED': 1107,
+    'Organizando um evento no LHC': 1106,
+    'Open Hackerspace': 1105,
+    'Oficina de Ruby on Rails com Sintesoft': 1104,
+    'Oficina de Lockpicking': 1103,
+    'Oficina de IoT': 1102,
+    'Oficina de FreeCAD': 1101,
+    'Oficina de Computacao Cognitiva/Visual Recognition IBM Watson': 1100,
+    'O Mundo das Startups': 1099,
+    'Minuta de Carta de Apresentação': 1098,
+    'Meetup Web Dev Campinas': 1097,
+    'Links Úteis': 1096,
+    'LHC Convida 2018': 1095,
+    'LHC Convida': 1094,
+    'Itens que gostaríamos de ter no futuro': 1093,
+    'Introdução ao Arduino': 1092,
+    'Introdução a Qt': 1091,
+    'Inside Kicad': 1090,
+    'Injeção eletrônica de baixo custo': 1089,
+    'Inauguração da nova sede': 1088,
+    'Impressão 3D': 1087,
+    'Horta Automatizada': 1086,
+    'Hidroponia com Arduino': 1085,
+    'Hands On com Intel Edison usando Bot do Telegram': 1084,
+    'Hands On IoT com Intel Edison': 1083,
+    'Hacking night': 1082,
+    'HackingNightFirst': 1081,
+    'HackingNightBluetooth': 1080,
+    'HackingNight20120321': 1079,
+    'Hackerspace Automation System': 1078,
+    'Hackatona Hackerspace': 1077,
+    'Hack the Gibson': 1076,
+    'Google Cardboard 2': 1075,
+    'Gerador de Função': 1074,
+    'Genuino Day 2016': 1073,
+    'Google cardboard': 1072,
+    'Formalização do Hackerspace': 1071,
+    'Fonte de Alimentação': 1070,
+    'Festa de Inauguração do LHC': 1069,
+    'Eventos Regulares': 1068,
+    'Eventos Passados': 1067,
+    'Evento:2022/09/01 hack night': 1066,
+    'Evento:2022/08/27 International hackerspace Open day 2022': 1065,
+    'Evento:2022/07/27 reunião mensal': 1064,
+    'Evento:2022/06/13 reunião mensal': 1063,
+    'Evento:2022/06/02 reunião mensal': 1062,
+    'Evento:2022/04/09 reunião mensal': 1061,
+    'Evento:2022/03/14 reunião mensal': 1060,
+    'Evento:2022/02/14 reunião mensal': 1059,
+    'Evento:2022/01/10 reunião mensal': 1058,
+    'Evento:2021/12/13 reunião mensal': 1057,
+    'Evento:2021/11/08 reunião mensal': 1056,
+    'Evento:2021/10/11 reunião mensal': 1055,
+    'Evento:2021/09/13 reunião mensal': 1054,
+    'Evento:2021/08/09 reunião mensal': 1053,
+    'Evento:2021/07/12 reunião mensal': 1052,
+    'Evento:2021/06/14 reunião mensal': 1051,
+    'Evento:2021/05/10 reunião mensal': 1050,
+    'Evento:2021/04/12 reunião mensal': 1049,
+    'Evento:2021/03/08 reunião mensal': 1048,
+    'Evento:2021/02/08 reunião mensal': 1047,
+    'Evento:2021/01/11 reunião mensal': 1046,
+    'Evento:2020/12/14 reunião mensal': 1045,
+    'Evento:2020/11/09 reunião mensal': 1044,
+    'Evento:2020/10/12 reunião mensal': 1043,
+    'Evento:2020/09/14 reunião mensal': 1042,
+    'Evento:2020/08/10 reunião mensal': 1041,
+    'Evento:2020/08/06 openwrt0x00': 1040,
+    'Evento:2020/08/06 LHCConvida08': 1039,
+    'Evento:2020/08/06 LHCConvida06': 1038,
+    'Evento:2020/07/23 LHCConvida05': 1037,
+    'Evento:2020/07/13 reunião mensal': 1036,
+    'Evento:2020/07/09 LHCConvida04': 1035,
+    'Evento:2020/06/25 LHCConvida03': 1034,
+    'Evento:2020/06/08 reunião mensal': 1033,
+    'Evento:2020/05/26 LHCConvida01': 1032,
+    'Evento:2020/05/11 reunião mensal': 1031,
+    'Evento:2020/04/16 Live Usando Python para encontrar uma nova casa para o LHC': 1030,
+    'Evento:2020/04/06 reunião mensal': 1029,
+    'Enderecamento IP': 1028,
+    'Encontro de Python': 1027,
+    'Encontro PyLadies Campinas 29/07/2017': 1026,
+    'Crowdfunding Equipamentos LHC 2017': 1025,
+    'Controle de Associados': 1024,
+    'Contador de Ciclistas': 1023,
+    'Confraternizacao LHC': 1022,
+    'Compra Fundamental': 1021,
+    'Como chegar': 1020,
+    'Cinco Minutos de Fama': 1019,
+    'CCCP - Campinas Classic Computer Party': 1018,
+    'CCCP:Máquinas Expostas': 1017,
+    'Automação com ESP8266': 1016,
+    'Arduino Day 2016': 1015,
+    'Aniversário de 2 anos do LHC': 1014,
+    '2018/07/10 Noite de Processing': 1013,
+    '2018/06/24 LHCerveja Brassagem': 1012,
+    '2017/11/25 A-Frame — WebVR com HTML e Entity-Component': 1011,
+    '2017/10/28 Mergulhando em Rust by Mozilla': 1010,
+    '2017/10/24 LHC Convida Ranulfo Paiva Sobrinho - Criptomoedas Blockchain e suas implicações': 1009,
+    '2017/10/19 Aniversario do LHC': 1008
+  };
+  const out = redirTable[urlParams.get('title')];
+  return out === undefined ? '/index.html' : 'https://discourse.lhc.net.br/t/' + out;
 }
 
 window.location = get_url_to_redir();
