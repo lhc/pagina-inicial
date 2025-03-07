@@ -66,7 +66,6 @@ function get_url_to_redir() {
     'RailsStorm': 1114,
     'Qualcomm Snapdragon': 1113,
     'Quadricoptero': 1112,
-    'Página principal': 1111,
     'Próximos Eventos': 1110,
     'Proximidades': 1109,
     'Perguntas Frequentes': 1108,
@@ -171,7 +170,8 @@ function get_url_to_redir() {
     '2017/10/24 LHC Convida Ranulfo Paiva Sobrinho - Criptomoedas Blockchain e suas implicações': 1009,
     '2017/10/19 Aniversario do LHC': 1008
   };
-  const out = redirTable[urlParams.get('title')];
+  const title = urlParams.get('title').get('title').replace(/ +(?= )/g, '_');
+  const out = redirTable[title];
   return out === undefined ? '/index.html' : 'https://discourse.lhc.net.br/t/' + out;
 }
 
@@ -242,7 +242,6 @@ Sem JavaScript não conseguimos fazer o redirecionamento automático. Escolha a 
 <li><a href="https://discourse.lhc.net.br/t/1114">RailsStorm</a></li>
 <li><a href="https://discourse.lhc.net.br/t/1113">Qualcomm Snapdragon</a></li>
 <li><a href="https://discourse.lhc.net.br/t/1112">Quadricoptero</a></li>
-<li><a href="https://discourse.lhc.net.br/t/1111">Página principal</a></li>
 <li><a href="https://discourse.lhc.net.br/t/1110">Próximos Eventos</a></li>
 <li><a href="https://discourse.lhc.net.br/t/1109">Proximidades</a></li>
 <li><a href="https://discourse.lhc.net.br/t/1108">Perguntas Frequentes</a></li>
