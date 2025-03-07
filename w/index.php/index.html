@@ -3,7 +3,6 @@
 <script>
 
 function get_url_to_redir() {
-  const urlParams = new URLSearchParams(window.location.search);
   const redirTable = {
     'About the Wiki Antigo category': 959,
     'Toscamp-1': 1171,
@@ -170,6 +169,11 @@ function get_url_to_redir() {
     '2017/10/24 LHC Convida Ranulfo Paiva Sobrinho - Criptomoedas Blockchain e suas implicações': 1009,
     '2017/10/19 Aniversario do LHC': 1008
   };
+  let href = window.location.href;
+  let questionLocation = href.indexOf('?');
+  // indexOf retorna -1, se não encontrar e a posição do ? se encontrar
+  // o construtor do URLSearchParams não quer o ?, então somando 1 funciona nos dois casos
+  const urlParams = new URLSearchParams(questionLocation.substring(href.indexOf('?') + 1));
   const title = urlParams.get('title').replace(/ +(?= )/g, '_');
   const out = redirTable[title];
   return out === undefined ? '/index.html' : 'https://discourse.lhc.net.br/t/' + out;
