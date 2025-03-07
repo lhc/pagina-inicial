@@ -170,7 +170,7 @@ function get_url_to_redir() {
     '2017/10/24 LHC Convida Ranulfo Paiva Sobrinho - Criptomoedas Blockchain e suas implicações': 1009,
     '2017/10/19 Aniversario do LHC': 1008
   };
-  const title = urlParams.get('title').get('title').replace(/ +(?= )/g, '_');
+  const title = urlParams.get('title').replace(/ +(?= )/g, '_');
   const out = redirTable[title];
   return out === undefined ? '/index.html' : 'https://discourse.lhc.net.br/t/' + out;
 }
