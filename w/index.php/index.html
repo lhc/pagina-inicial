@@ -357,7 +357,7 @@ if (title !== null) {
 
 if (redir === false) {
   let urlParams = new URLSearchParams({
-  	'q': title !== null ? title.replace('_', ' ') : ''
+  	'q': title !== null ? title.replaceAll('_', ' ') : ''
   });
   document.getElementById("redir").innerHTML = "<img src=\"../../capy.png\">Oops!";
   document.getElementById("nao-encontrado").innerHTML = `Não conheço a página requisitada, mas você pode tentar encontrar aqui:
