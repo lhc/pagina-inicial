@@ -174,7 +174,7 @@ function get_url_to_redir() {
   // indexOf retorna -1, se não encontrar e a posição do ? se encontrar
   // o construtor do URLSearchParams não quer o ?, então somando 1 funciona nos dois casos
   const urlParams = new URLSearchParams(href.substring(questionLocation + 1));
-  const title = urlParams.get('title').replace('_', ' ').replace(/ +(?= )/g, '');
+  const title = urlParams.get('title').replaceAll('_', ' ').replaceAll(/ +(?= )/g, '');
   const out = redirTable[title];
   return out === undefined ? '/index.html' : 'https://discourse.lhc.net.br/t/' + out;
 }
