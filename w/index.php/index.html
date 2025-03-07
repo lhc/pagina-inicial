@@ -356,11 +356,14 @@ if (title !== null) {
 }
 
 if (redir === false) {
+  let urlParams = new URLSearchParams({
+  	'q': title !== null ? title.replace('_', ' ') : ''
+  });
   document.getElementById("redir").innerHTML = "<img src=\"../../capy.png\">Oops!";
   document.getElementById("nao-encontrado").innerHTML = `Não conheço a página requisitada, mas você pode tentar encontrar aqui:
   <ul>
       <li><a href="https://lhc.net.br/">Página principal do LHC</a></li>
-      <li><a href="https://discourse.lhc.net.br/search?q=${title !== null ? title : ''}">Busca no fórum de discussão</a></li>
+      <li><a href="https://discourse.lhc.net.br/search?q=${urlParams.toString()}">Busca no fórum de discussão</a></li>
       <li><a href="https://discourse.lhc.net.br/">Página principal do fórum de discussão do LHC</a></li>
   </ul>`;
 }
