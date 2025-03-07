@@ -4,7 +4,7 @@
 
 function get_url_to_redir() {
   const urlParams = new URLSearchParams(window.location.search);
-  const title = urlParams.get('title');
+  const title = urlParams.get('title').replace(/ +(?= )/g, '_');
   if (title === 'About the Wiki Antigo category') return 'https://discourse.lhc.net.br/t/959';
   if (title === 'Toscamp-1') return 'https://discourse.lhc.net.br/t/1171';
   if (title === 'The Weather') return 'https://discourse.lhc.net.br/t/1170';
