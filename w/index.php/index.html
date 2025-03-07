@@ -363,7 +363,7 @@ if (redir === false) {
   document.getElementById("nao-encontrado").innerHTML = `Não conheço a página requisitada, mas você pode tentar encontrar aqui:
   <ul>
       <li><a href="https://lhc.net.br/">Página principal do LHC</a></li>
-      <li><a href="https://discourse.lhc.net.br/search?q=${urlParams.toString()}">Busca no fórum de discussão</a></li>
+      <li><a href="https://discourse.lhc.net.br/search?${urlParams.toString()}">Busca no fórum de discussão</a></li>
       <li><a href="https://discourse.lhc.net.br/">Página principal do fórum de discussão do LHC</a></li>
   </ul>`;
 }
