@@ -187,7 +187,7 @@
       <h2 id="quandoir">Quando ir?</h2>
       <p style="float: right; margin-left: 24px; text-align: center">
            <img id="spaceapi-icon" src="closed.png" alt="padlock"><br>
-           Estamos <b id="spaceapi-state">fechados</b>
+           Estamos <a href="https://mapall.space/heatmap/show.php?id=Laboratorio+Hacker+de+Campinas" id="spaceapi-state"><b>fechados</b></a>
       </p>
       <p>Quem se associa ao LHC tem <b>acesso 24h</b> e pode ir <b>quando quiser</b>;
         quem não for associado, precisa ir quando alguma pessoa associada estiver
@@ -324,7 +324,7 @@
     <script>
      fetch('https://status.lhc.net.br')
      .then(T => T.json())
-     .then(function(s) {
+     .then(s => {
      	if (s.state.open) {
      	  document.getElementById("spaceapi-icon").src = "open.png";
      	  document.getElementById("spaceapi-state").innerHTML = "abertos";
