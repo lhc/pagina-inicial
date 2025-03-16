@@ -185,6 +185,10 @@
         <a href="https://discourse.lhc.net.br/c/projetos/5">projetos</a>.
       </p>
       <h2 id="quandoir">Quando ir?</h2>
+      <p style="float: right; margin-left: 24px; text-align: center">
+           <img id="spaceapi-icon" src="closed.png" alt="padlock"><br>
+           Estamos <b id="spaceapi-state">fechados</b>
+      </p>
       <p>Quem se associa ao LHC tem <b>acesso 24h</b> e pode ir <b>quando quiser</b>;
         quem não for associado, precisa ir quando alguma pessoa associada estiver
         por lá.  O jeito mais fácil de saber quando vai ter gente lá para
@@ -317,5 +321,15 @@
       </p>
     </div>
     <script src="https://eventos.lhc.net.br/gancio-events.es.js"></script>
+    <script>
+     fetch('https://status.lhc.net.br')
+     .then(T => T.json())
+     .then(function(s) {
+     	if (s.state.open) {
+     	  document.getElementById("spaceapi-icon").src = "open.png";
+     	  document.getElementById("spaceapi-state").innerHTML = "abertos";
+     	}
+     })
+    </script>
   </body>
 </html>
