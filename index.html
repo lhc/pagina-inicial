@@ -321,14 +321,21 @@
     </div>
     <script src="https://eventos.lhc.net.br/gancio-events.es.js"></script>
     <script>
-     fetch('https://status.lhc.net.br')
-     .then(T => T.json())
-     .then(s => {
-     	if (s.state.open) {
-     	  document.getElementById("spaceapi-icon").src = "open.png";
-     	  document.getElementById("spaceapi-state").innerHTML = "abertos";
-     	}
-     })
+     let atualiza = () => {
+       fetch('https://status.lhc.net.br')
+       .then(T => T.json())
+       .then(s => {
+          if (s.state.open) {
+            document.getElementById("spaceapi-icon").src = "open.png";
+            document.getElementById("spaceapi-state").innerHTML = "abertos";
+          } else {
+            document.getElementById("spaceapi-icon").src = "closed.png";
+            document.getElementById("spaceapi-state").innerHTML = "fechados";
+          }
+          setTimeout(atualiza, 5 * 60);
+       });
+     };
+     atualiza();
     </script>
   </body>
 </html>
