@@ -1,0 +1,2 @@
+<meta http-equiv="refresh" content="0; url=/index.php?title=Doe">
+<script>window.top.location = '/index.php?title=Doe';</script>
